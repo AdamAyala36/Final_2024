@@ -93,9 +93,24 @@ options(digits=2)
 ## Effectiveness Confidence Interval `r low`  to `r hi`
 
 
-The odds ratio of the males with vaccines vs those with placebos has a ratio greater than 70 maeaning we have a effective vaccine for males. 
+The odds ratio of the males with vaccines vs those with placebos has a ratio greater than 70 meaning we have a effective vaccine for males. 
+
 
 ## Females
+### Barplot
+
+```{r}
+Females <- gal %>% group_by(infected,treatment) %>% summarize(count=n()) %>% mutate(prcnt=count/sum(count))
+
+basicC <- ggplot(Females,aes(x=infected,y=count,fill=treatment))
+basicC + geom_bar(stat="identity",position="dodge")
+
+basicCC <- ggplot(Females,aes(x=infected,y=prcnt*100,fill=treatment)) 
+basicCC + geom_bar(stat="identity", position = "dodge")
+```
+This plot represents the population of gals(females) people and the relationship to the contraction of covid-19 by either talking the vaccine or the placebo. 
+
+Covid19 vaccine is shown to have a 2:1 ratio with the amount infected when compared to the placebo. The percentage seems to be about 36% for females who got infected with a vaccine compared to the percentage of about 65% of females who got infected with the placebo.
 
 
 ## LGBTQ
