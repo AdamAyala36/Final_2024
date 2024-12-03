@@ -63,6 +63,23 @@ colPerc(table1)
 The males had a low percentage of 26.2% of males who got covid19 after taking the vaccine. Compared to those without a vaccine with 73.8% getting covid19. The vaccine is looking very promising.
 
 
+### Inferential 
+
+
+
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+guysfish <- fisher.test(table1)
+guysfish
+```
+
+
+The information to play close attention to among all of these results is the output of the Fisher's Exact test. The p-value displayed above is extremely small at 2.2e-16. Seeing this number means that these results are not likely to occur by chance.
+
+Our odds ratio of about 2.8 proves that this vaccine is effective in stopping covid19 compared to a placebo.
+
+
 
 ## Females
 
