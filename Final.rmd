@@ -205,7 +205,23 @@ The p-value is 0.00000007. This in an incredibly small number and with that bein
 The Fishers's Exact Test illustrates that the odds ratio is 4.3
 Proving that this vaccine is very effective.
 
+```{r}
+effect <- gaysfish$p.value/(gaysfish$p.value +1)
+effectivenessgays = gaysfish$estimate/(gaysfish$estimate +1)*100
+print(effectivenessgays)
+```
 
+```{r}
+low=(gaysfish$conf.int[1]/(gaysfish$conf.int[1] +1))*100
+hi=(gaysfish$conf.int[2]/(gaysfish$conf.int[2] +1))*100
+options(digits=2)
+```
+
+
+## Effectiveness Confidence Interval `r low`  to `r hi`
+
+Above is the effectiveness for the covid-19 for those who identified as gay.  
+The odds ratio is 81 which is the highest we have seen in all data points so far. This is a extremely good vaccine for those that are gay.
 
 ## Druggies
 
