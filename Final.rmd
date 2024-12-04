@@ -75,7 +75,7 @@ guysfish
 ```
 
 
-The information to play close attention to among all of these results is the output of the Fisher's Exact test. The p-value displayed above is extremely small at 2.2e-16. Seeing this number means that these results are not likely to occur by chance.
+The information to play close attention to among all of these results is the output of the Fisher's Exact test. The p-value displayed above is extremely small at 2.2e-16  0.00000000000000022. Seeing this number means that these results are not likely to occur by chance.
 
 Our odds ratio of about 2.8 proves that this vaccine is effective in stopping covid19 compared to a placebo.
 ```{r}
@@ -121,6 +121,22 @@ colPerc(table1)
 ```
 
 Females that took the vaccine had 35% get infected with covid19 while those who took the placebo had a 65% who got infected. This does show to be about a 2:1 ratio
+
+### Inferential 
+
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+galsfish <- fisher.test(table1)
+galsfish
+```
+
+
+
+The information to play close attention to among all of these results is the output of the Fisher's Exact test. The p-value displayed above is extremely small at 0.00000001. This is an extremely tiny number. seeing this number means that these results are not likely to occur by chance and so the null hypothesis can be rejected in favor of the alternative.
+
+
+The Fishers's Exact Test illustrates that the odds ratio is 1.9. a good ratio for effectiveness. 
 
 ## LGBTQ
 
