@@ -112,6 +112,15 @@ This plot represents the population of gals(females) people and the relationship
 
 Covid19 vaccine is shown to have a 2:1 ratio with the amount infected when compared to the placebo. The percentage seems to be about 36% for females who got infected with a vaccine compared to the percentage of about 65% of females who got infected with the placebo.
 
+### Numerical results
+
+```{r}
+table1 <- xtabs(~infected + treatment, data=gal)
+rowPerc(table1)
+colPerc(table1)
+```
+
+Females that took the vaccine had 35% get infected with covid19 while those who took the placebo had a 65% who got infected. This does show to be about a 2:1 ratio
 
 ## LGBTQ
 
