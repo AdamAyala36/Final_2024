@@ -138,6 +138,24 @@ The information to play close attention to among all of these results is the out
 
 The Fishers's Exact Test illustrates that the odds ratio is 1.9. a good ratio for effectiveness. 
 
+```{r}
+effect <- galsfish$p.value/(galsfish$p.value +1)
+effectivenessgal = galsfish$estimate/(galsfish$estimate +1)*100
+print(effectivenessgal)
+```
+
+```{r}
+low=(galsfish$conf.int[1]/(galsfish$conf.int[1] +1))*100
+hi=(galsfish$conf.int[2]/(galsfish$conf.int[2] +1))*100
+options(digits=2)
+```
+
+## Effectiveness Confidence Interval `r low`  to `r hi`
+
+
+The effectiveness for the females on confidence interval is 65. This is above 50% showing to be a pretty good vaccine, but the males have more effectiveness if we compare to the females as they had a 74 for their confidence interval. 
+
+
 ## LGBTQ
 
 
