@@ -284,11 +284,13 @@ options(digits=2)
 
 ## Effectiveness Confidence Interval `r low`  to `r hi`
 
-
-
-
-Above, is the effectiveness for the covid-19 for guys. If the effectiveness is above 50% that means that the vaccine is effective. The confidence interval odds ratio shows to be an 8, this is less than 50 and this is very very small meaning this vaccine should never be conssidered and it is worse that taking nothing as it gives covid19 and taking nothing is better than this vaccine.
+Above, is the effectiveness for the covid-19 for guys. If the effectiveness is above 50% that means that the vaccine is effective. The confidence interval odds ratio shows to be an 8, this is less than 50 and this is very very small meaning this vaccine should never be considered and it is worse that taking nothing as it gives covid19 and taking nothing is better than this vaccine.
 
 
 
 # Overall Results and Conclusions
+
+Overall this covid19 vaccine was a great vaccine for everybody except for druggies. Druggies would have a worse outcome since the data shows the vaccine actual gives covid19 to druggies with about 91% of druggies getting covid19 when taking the vaccine and 8% percent getting infected when taking a placebo. Other than druggies this vaccine will help male, females and LGBTQ however, the data shows that LGBTQ were more positively impacted with only 20% of them getting infected when taking the vaccine. This is the lowest percentage seen as males came in second with about 26% getting infected after taking the vaccine and followed by females with 35% getting infected with the vaccine. 
+
+This means that males, females and those who are LGBTQ should use the vaccine ass it is beneficial in helping them combat covid19. Unfortunately, drug users should never recieve this vaccine as whatever was inside it would cause covid19 to drug users. It is bad when a placebo has better results than a vaccine.
+
